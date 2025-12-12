@@ -1,84 +1,119 @@
-# Kanban Board
+# Kanban-Board
+# 🗂️ Kanban Board — JavaScript, HTML, CSS
 
-A simple, clean, and functional Kanban Board built using HTML, CSS, and Vanilla JavaScript.  
-It allows you to create tasks, drag & drop them across columns, delete tasks, and automatically saves everything using LocalStorage.
-
----
-
-## 🚀 Features
-
-### ✔ Add New Tasks  
-Create tasks with a title and description using a modal form.
-
-### ✔ Drag & Drop  
-Move tasks seamlessly between To Do, In Progress, and Done columns.
-
-### ✔ Delete Tasks  
-Each task has a delete button to remove it instantly.
-
-### ✔ Persistent Storage  
-All tasks are saved to LocalStorage, so your board stays intact even after refreshing.
-
-### ✔ Automatic Task Count  
-Each column shows the number of tasks inside it and updates in real time.
+A clean, minimal, and fully functional **Kanban Board** built using **Vanilla JavaScript**, **HTML**, and **CSS**.  
+You can add tasks, drag them between columns, delete them, and the board automatically saves all data using localStorage.
 
 ---
 
-## 🧩 Tech Stack
+## 🚀 Demo
+👉 Live Preview:  
+https://poshak894.github.io/Kanban-Board/
 
+---
+
+## 📌 Features
+- Add tasks using a popup modal  
+- Drag & drop tasks across columns  
+- Delete tasks  
+- Auto-save using localStorage  
+- Data restored on refresh  
+- Modern UI with smooth interactions  
+- Fully responsive layout  
+
+---
+
+## 📋 Columns
+- **To Do** — tasks not yet started  
+- **In Progress** — tasks currently active  
+- **Done** — completed tasks  
+
+Each column displays a **live task count**.
+
+---
+
+## 🧠 How It Works
+
+### Task Creation
+Tasks include:
+- Title  
+- Description  
+- Delete button  
+- Drag capability  
+
+### Drag & Drop
+- Tasks are draggable  
+- Columns detect drag events  
+- Counts update immediately  
+
+### Local Storage
+Tasks are saved in three lists:
+- todo  
+- progress  
+- done  
+
+Everything is restored on page load.
+
+---
+
+## 📁 Project Structure
+
+/  
+├─ index.html  
+├─ style.css  
+├─ index.js  
+└─ README.md  
+
+---
+
+## 📦 Run Locally
+
+1. Clone the repo:  
+   git clone https://github.com/poshak894/kanban-board.git
+
+2. Open the folder:  
+   cd kanban-board
+
+3. Open **index.html** in any browser.
+
+---
+
+## 🌐 Deploy on GitHub Pages
+
+1. Go to **Settings → Pages**  
+2. Set:  
+   - Source: Deploy from branch  
+   - Branch: main  
+   - Folder: /(root)  
+3. Save  
+
+Your site will appear at:  
+https://poshak894.github.io/Kanban-Board/
+
+---
+
+## 🛠️ Technologies Used
 - HTML5  
 - CSS3  
-- JavaScript (Vanilla)
+- JavaScript (ES6)  
+- LocalStorage API  
 
 ---
 
-## 📂 Project Structure
-/
-├── index.html # Main UI layout
-├── style.css # Styling (theme, layout, modal, tasks)
-└── index.js # App logic (task management, drag & drop, localStorage)
+## 🔮 Future Improvements
+- Edit task functionality  
+- Tags or categories  
+- Light/Dark mode  
+- Better drag animations  
+- Cloud sync  
 
 ---
 
-## ⚙️ How It Works
-
-### ➤ 1. Adding a Task
-The modal collects a title and description, then calls:
-
-`addTask(taskTitle, taskDescription, todo);`
-
-### ➤ 2. Drag & Drop
-Each task is draggable and can be moved into any column.
-
-### ➤ 3. Delete Button
-Every task includes a delete button that removes it and updates counts.
-
-### ➤ 4. LocalStorage Sync
-Tasks are saved after every change using:
-
-`localStorage.setItem("tasks", JSON.stringify(taskData));`
+## 🤝 Contributing
+Contributions are welcome! Fork the repo and submit a pull request.
 
 ---
 
-## 🛠 Future Improvements
-
-- Edit task feature  
-- Priority labels  
-- Due dates  
-- Dark/light theme switch  
-- Search tasks  
-- Custom categories  
-
----
-
-## 👩‍💻 Author
-
-Built with ❤️ by **Poshak**.  
-If you use this project, feel free to star ⭐ the repo!
-
----
-
-## 📄 License
-
-This project is free to use. Add a license if you publish on GitHub.
+## 📜 License
+Licensed under the **MIT License**.
 
