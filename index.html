@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kanban Board</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bitcount+Prop+Single:wght@100..900&family=IBM+Plex+Serif:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Noto+Serif+Khojki:wght@400..700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <main>
+        <nav>
+            <div class="left name">Kanban</div>
+            <div class="right"><button id="toggle-modal">Add New Task</button></div>
+        </nav>
+        <section class="board">
+            <div id="todo" class="task-column">
+                <div class="heading">
+                    <div class="left">To Do</div>
+                    <div class="right">Count</div>
+                </div>
+            </div>
+            <div id="progress" class="task-column">
+                 <div class="heading">
+                    <div class="left">In Progress</div>
+                    <div class="right">Count</div>
+                </div>
+            </div>
+            <div id="done" class="task-column">
+                 <div class="heading">
+                    <div class="left">Done</div>
+                    <div class="right">Count</div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <div class="modal add-new-task">
+        <div class="bg"></div>
+        <div class="center">
+            <input type="text" id="task-title-input" placeholder="Task Title">
+            <textarea id="task-description-input" placeholder="Task Description"></textarea>
+            <button class="add-task-btn" id="add-new-task">Add Task</button>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
